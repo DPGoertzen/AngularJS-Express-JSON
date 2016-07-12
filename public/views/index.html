@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Olympian Picker</title>
+    <script src="vendor/angular.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body ng-controller="OlympicController">
+    <audio ng-src="{{kurt}}" autoplay loop></audio>
+    <div class="button">
+      <button ng-click="generator()">Generate Athletes!</button>
+    </div>
+    <div class="flex">
+
+        <p ng-repeat="olympian in olympicsList track by $index"><b>{{olympian.sport}}</b></br><img ng-src="{{olympian.image}}" /><br />{{olympian.name}} <br /> {{olympian.location}}</p>
+
+    </div>
+
+  </body>
+</html>

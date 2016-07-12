@@ -1,0 +1,60 @@
+body {
+  background-color: #0052A5;
+}
+
+
+.flex {
+  flex: 1 1 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: crimson;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
+  font-family: 'Oswald', cursive;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border: solid 2px black;
+
+}
+
+p:nth-child(even) {
+  background-color: #E0162B;
+  color: white;
+}
+
+p:nth-child(odd) {
+  background-color: white;
+  color: #0052A5;
+}
+
+img {
+  border: 3px solid black;
+  border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: -webkit-filter 0.5s;
+}
+
+img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: greyscale(0%;)
+}
